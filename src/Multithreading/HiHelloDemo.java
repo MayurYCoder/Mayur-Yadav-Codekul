@@ -1,7 +1,7 @@
 package Multithreading;
 
 public class HiHelloDemo {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         Thread t1=new Thread(new Runnable() {
             @Override
             public void run() {
@@ -32,5 +32,9 @@ public class HiHelloDemo {
 
         t1.start();
         t2.start();
+
+        t1.join();
+        t2.join();
+        System.out.println("Exit");
     }
 }

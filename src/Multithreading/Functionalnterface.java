@@ -1,5 +1,5 @@
 package Multithreading;
-// In functional interface we can use lamda function
+// In functional interface we can use lamda function->
 public class Functionalnterface {
     public static void main(String[] args) {
 
@@ -7,7 +7,7 @@ public class Functionalnterface {
                 return a+b;
 
         };
-
+        System.out.println(obj.add(1,2));
     }
 }
 @FunctionalInterface
