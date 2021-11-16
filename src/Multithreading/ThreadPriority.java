@@ -2,6 +2,8 @@ package Multithreading;
 /*priority-  Max=10
              Normal=5(default)
              Min=1
+ *  Priority of the daemon thread is always low but we can set th epriority
+
  */
 public class ThreadPriority {
     public static void main(String[] args) {
