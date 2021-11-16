@@ -27,11 +27,14 @@ class Hello implements Runnable{
             }
         }
     }
+
+
 }
 class Main{
     public static void main(String[] args) {
         multithreadingDemo obj=new multithreadingDemo();
         obj.start();
+
 
 
 
