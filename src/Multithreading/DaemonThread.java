@@ -1,18 +1,23 @@
 package Multithreading;
+/*1.set Daemon thread before starting of thread otherwise you will gwt exception.
+  2.We cannot set the daemon thread to main method.
+
+
+ */
+
+
 
 public class DaemonThread extends Thread {
-    @Override
-    public void run() {
-        System.out.println("In child thread");
-        System.out.println(Thread.currentThread().isDaemon());
+    public static void main(String[] args) {
+        DaemonThread obj=new DaemonThread();
+        obj.setDaemon(true);
+        obj.start();
+        System.out.println(obj.isDaemon());
+        System.out.println("In main Method");
     }
 
-    public static void main(String[] args) {
-        System.out.println("In main thread");
-
-        DaemonThread t=new DaemonThread();
-        t.setDaemon(true);
-       // System.out.println(t.isDaemon());
-        t.start();
+    @Override
+    public void run() {
+        System.out.println("In run Method");
     }
 }

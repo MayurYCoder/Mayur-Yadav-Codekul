@@ -10,7 +10,7 @@ public class JoinDemo extends Thread {
             System.out.println(e);
         }
         for (int i=1;i<=5;i++){
-            System.out.println("Chiled thread:"+i);
+            System.out.println("Child thread:"+i);
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
