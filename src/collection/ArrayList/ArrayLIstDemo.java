@@ -1,4 +1,4 @@
-package collection;
+package collection.ArrayList;
 /*
 arraylist maintain instertion order
 arraylist maintain
