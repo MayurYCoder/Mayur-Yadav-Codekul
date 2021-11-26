@@ -1,4 +1,4 @@
-package collection;
+package collection.LinkedList;
 /*   linked list stores .
 
  */
