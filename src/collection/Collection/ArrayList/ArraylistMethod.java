@@ -1,4 +1,4 @@
-package collection.ArrayList;
+package collection.Collection.ArrayList;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,14 +14,16 @@ public class ArraylistMethod {
 
         List<Integer> list2 = new ArrayList<>();
         list2.add(6);
-        list2.add(7);
+        list2.add(6);
         list2.add(8);
-        list2.add(10);
+        list2.add(8);
+        list2.add(5);
 
-        list1.addAll(list2);
-        list1.toArray();
+        //list1.addAll(list2);
+        //System.out.println(list1.toArray());
+
         //list1.removeIf(num->num%2==0);
-        // list1.retainAll(list2);
+         list1.retainAll(list2);
         //list1.removeAll(list2);
         System.out.println(list1);
 

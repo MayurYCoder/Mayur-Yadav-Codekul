@@ -1,11 +1,10 @@
-package collection.ArrayList;
+package collection.Collection.ArrayList;
 /*
 arraylist maintain instertion order
 arraylist maintain
  */
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 
