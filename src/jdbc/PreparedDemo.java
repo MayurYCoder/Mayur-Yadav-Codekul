@@ -30,7 +30,7 @@ public class PreparedDemo {
 
             int i=preparedStatement.executeUpdate();
 
-            System.out.println("roe inserted==>"+i);
+            System.out.println("row inserted==>"+i);
 
 
         } catch (ClassNotFoundException | SQLException e) {
