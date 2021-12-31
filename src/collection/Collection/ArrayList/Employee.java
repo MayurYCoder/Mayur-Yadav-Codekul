@@ -1,5 +1,6 @@
 package collection.Collection.ArrayList;
 
+import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -26,10 +27,14 @@ public class Employee {
         list.add(obj2);
         list.add(obj3);
 
-        list.forEach(s->{
-            System.out.println(s.id+" "+s.Name+" "+s.salary);
-        });
+
+
+        System.out.println(list);
+
+
 
 
     }
+
+
 }
