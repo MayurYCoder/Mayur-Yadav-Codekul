@@ -7,12 +7,13 @@ import java.util.TreeSet;
 
 public class SetDemo {
     public static void main(String[] args) {
-        Set<Integer>set=new HashSet<>();
+        Set<Integer>set=new HashSet();
         set.add(10);
         set.add(20);
         set.add(30);
         set.add(40);
         set.add(50);
+        System.out.println(set);
 
         Set<Integer>set1=new HashSet<>();
         set1.add(30);
@@ -20,7 +21,7 @@ public class SetDemo {
         set1.add(10);
         set1.add(320);
         set.contains(set1);
-        System.out.println(set);
+        System.out.println(set1);
 
 //treeset will give output in the ascending order
         Set<Integer>set2=new TreeSet<>();

@@ -23,8 +23,8 @@ public class ArraylistMethod {
         //System.out.println(list1.toArray());
 
         //list1.removeIf(num->num%2==0);
-         list1.retainAll(list2);
-        //list1.removeAll(list2);
+         //list1.retainAll(list2);
+        list1.removeAll(list2);
         System.out.println(list1);
 
        /*

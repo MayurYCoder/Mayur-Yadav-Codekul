@@ -18,7 +18,7 @@ public class ArrayMultiplication {
         list2.add(10);
 
         
-        int j = list2.size() - 1;
+        int j = list2.size()-1;
         for (int i = 0; i <= list1.size() - 1; i++) {
             System.out.println(list1.get(i) * list2.get(j));
             j--;

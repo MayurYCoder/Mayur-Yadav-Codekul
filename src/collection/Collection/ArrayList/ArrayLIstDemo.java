@@ -17,14 +17,13 @@ public class ArrayLIstDemo {
         list.add(40);
 
         System.out.println(list);
-/*        System.out.println(list.get(1));
+        System.out.println(list.get(1));
         System.out.println(list.isEmpty());
         System.out.println(list.size());
         System.out.println(list.remove(2));
         System.out.println(list.set(1,20));
         System.out.println(list.contains(10));
-
-*/        list.forEach(s->{
+        list.forEach(s->{
             System.out.println(s);
         });
 

@@ -12,11 +12,10 @@ public class LinkedListMethods {
         name.add("saddy");
         System.out.println(name.size());
 
-        Iterator<String >iterator=name.iterator();
-        while (iterator.hasNext()){
-            System.out.println(iterator.next());
-        }
-
+     Iterator<String>iterator=name.iterator();
+     while (iterator.hasNext()){
+         System.out.println(iterator.next());
+     }
         LinkedList<String>name1=new LinkedList<String >();
         name1.add("Trump");
         name1.add("kamala");
@@ -28,11 +27,10 @@ public class LinkedListMethods {
         name.addFirst("jani");
         System.out.println(name);
 
-        Iterator<String >itr=name.descendingIterator();
-        while(itr.hasNext()){
-            System.out.println(itr.next());
-        }
-
+      Iterator<String>iterator1=name.descendingIterator();
+      while (iterator1.hasNext()){
+          System.out.println(iterator1.next());
+      }
 
     }
 }

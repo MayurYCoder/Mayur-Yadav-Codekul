@@ -13,7 +13,7 @@ public class PrepredDemo1 {
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection connection= DriverManager.getConnection("jdbc:mysql://localhost:3306/javabatch","root","Mayur@1234");
 
-            String delete="delete from employee where id>4";
+            String delete="delete from employee where id>2";
 
             PreparedStatement preparedStatement=connection.prepareStatement(delete);
             int i=preparedStatement.executeUpdate();

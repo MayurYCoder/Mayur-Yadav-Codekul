@@ -18,7 +18,7 @@ class C extends A{
     public static void main(String[] args) {
         A obj=new A();
         obj.showA();
-        System.out.println("____________________");
+       System.out.println("____________________");
         B obj1= new B();
         obj1.showA();
         obj1.showB();
@@ -27,5 +27,7 @@ class C extends A{
         C obj2=new C();
         obj2.showA();
         obj2.showC();
+
+
     }
 }

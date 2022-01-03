@@ -4,11 +4,11 @@ public class JoinDemo extends Thread {
     static Thread mainthread;
     @Override
     public void run() {
-        try {
+      /*  try {
             mainthread.join();
         } catch (InterruptedException e) {
             System.out.println(e);
-        }
+        }*/
         for (int i=1;i<=5;i++){
             System.out.println("Child thread:"+i);
             try {
@@ -23,14 +23,16 @@ public class JoinDemo extends Thread {
 
         mainthread=Thread.currentThread();
 
-        JoinDemo T1=new JoinDemo();
+   /*     JoinDemo T1=new JoinDemo();
         T1.start();
- /*       try {
+        try {
             T1.join();
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
- */
+
+    */
+
 
         try {
             for (int i = 1; i <= 5; i++) {
@@ -40,6 +42,8 @@ public class JoinDemo extends Thread {
         }catch (InterruptedException e) {
                 e.printStackTrace();
             }
+
+
 
 
 

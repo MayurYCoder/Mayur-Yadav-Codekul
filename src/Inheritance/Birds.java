@@ -6,13 +6,13 @@ public class Birds {
     }
 }
 class Pecock extends Birds{
-    void display(){
+    void display() {
         System.out.println("pecock can not fly");
     }
 }
 class Duck extends Pecock{
-    void seen(){
-        System.out.println("duck can swi");
+    void seen() {
+        System.out.println("duck can swim");
     }
 
     public static void main(String[] args) {

@@ -1,35 +1,32 @@
 package Inheritance;
-
+//This is example of the multiple inheritance.
 public class Bikes {
     void bikes(){
-        System.out.println("Sports bikes");
+        System.out.println("welcome to bikes");
     }
 }
 class Cruser extends Bikes{
-    void cruser(){
+    void bikes1(){
         System.out.println("Cruser bikes");
+
     }
 }
-class Classic extends Cruser{
-    void classic(){
-        System.out.println("Classic bikes");
+class Sport extends Cruser{
+    void Bikes2(){
+        System.out.println("Sport bikes");
     }
 
     public static void main(String[] args) {
-        Bikes obj= new Bikes();
+        Bikes obj=new Bikes();
         obj.bikes();
-        //obj.Cruser();
-        //obj.Classic();
 
-        Cruser obj1= new Cruser();
-        obj1.bikes();
-        obj1.cruser();
-        //obj1.classics();
-
-        Classic obj2=new Classic();
+        Cruser obj2=new Cruser();
         obj2.bikes();
-        obj2.cruser();
-        obj2.classic();
+        obj2.bikes1();
 
+        Sport obj3=new Sport();
+        obj3.bikes();
+        obj3.bikes1();
+        obj3.Bikes2();
     }
 }

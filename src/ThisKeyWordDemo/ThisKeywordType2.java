@@ -4,15 +4,15 @@ package ThisKeyWordDemo;
 
 
 public class ThisKeywordType2 {
-    void display(){
-        System.out.println("hello");
+    public void display(){
+       System.out.println("in a display method");
     }
-    void show(){
-       display();
+    public void show(){
+       this.display();
     }
 
-    public static void main(String[] args) {
-        ThisKeywordType2 obj= new ThisKeywordType2();
-        obj.show();
-    }
+   public static void main(String[] args) {
+      ThisKeywordType2 obj=new ThisKeywordType2();
+      obj.show();
+   }
 }

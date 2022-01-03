@@ -1,5 +1,6 @@
 package collection.Collection.ArrayList;
 
+import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.List;
@@ -13,6 +14,15 @@ public class Employee {
         this.id = id;
         Name = name;
         this.salary = salary;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "id=" + id +
+                ", Name='" + Name + '\'' +
+                ", salary=" + salary +
+                '}';
     }
 
     public static void main(String[] args) {
@@ -30,6 +40,9 @@ public class Employee {
 
 
         System.out.println(list);
+        list.forEach(s->{
+            System.out.println(s);
+        });
 
 
 

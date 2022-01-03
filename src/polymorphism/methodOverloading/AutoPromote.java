@@ -10,6 +10,7 @@ public class AutoPromote {
 
     public static void main(String[] args) {
         AutoPromote obj=new AutoPromote();
-        obj.show('a');
+        obj.show("a");
+        obj.show(1);
     }
 }

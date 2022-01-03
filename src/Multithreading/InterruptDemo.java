@@ -1,28 +1,23 @@
 package Multithreading;
 
 public class InterruptDemo extends Thread {
-    @Override
     public void run() {
-        //System.out.println(Thread.interrupted());         //If we comment this line then exception will occur otherwise not.
+        System.out.println(Thread.interrupted());
         System.out.println(Thread.currentThread().isInterrupted());
-
         try {
             for (int i = 1; i <= 5; i++) {
                 System.out.println(i);
-                Thread.sleep(500);
-                //System.out.println(Thread.interrupted());
-
+                Thread.sleep(200);
             }
         } catch (InterruptedException e) {
-            System.out.println("Thread interupted"+e);
-
+            System.out.println("++"+e);
         }
 
     }
 
     public static void main(String[] args) {
-        InterruptDemo T1 = new InterruptDemo();
-        T1.start();
-        T1.interrupt();
+        InterruptDemo obj=new InterruptDemo();
+        obj.start();
+        obj.interrupt();
     }
 }

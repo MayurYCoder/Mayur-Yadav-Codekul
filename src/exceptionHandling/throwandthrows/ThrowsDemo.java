@@ -5,7 +5,8 @@ import java.io.FileReader;
 
 public class ThrowsDemo {
     void readFile() throws FileNotFoundException {
-        FileReader fileReader = new FileReader("text.txt");
+        System.out.println("File reading successfully done");
+        FileReader fileReader = new FileReader("text11.txt");
     }
 }
 class Test{

@@ -6,17 +6,19 @@ package ThisKeyWordDemo;
 public class ThisKeywordType1 {
     int id;
 
-    void setValues(int id){
-       this.id=id;
-    }
-    void display(){
-        System.out.println(id);
-    }
+ public void setValues(int id){
+     this.id=id;
+     System.out.println(id);
+ }
+ public void display(){
+     System.out.println(id);
+ }
 
     public static void main(String[] args) {
-        ThisKeywordType1 M= new ThisKeywordType1();
-        M.setValues(20);
-        System.out.println("id==>"+ M.id);
-       // M.display();
+        ThisKeywordType1 obj=new ThisKeywordType1();
+        obj.setValues(20);
+        obj.display();
     }
+
+
 }

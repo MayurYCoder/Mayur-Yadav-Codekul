@@ -1,26 +1,28 @@
 package Inheritance;
-
+//This is example of the hybrid inheritance
 public class Teachers {
-    protected int id;
+    int id;
     String name;
     String address;
 }
-     class MathsTeacher extends Teachers{
-        public static void main(String[] args) {
-            MathsTeacher mathsTeacher = new MathsTeacher();
-            mathsTeacher.id=1;
-            mathsTeacher.name="Sachin";
-            mathsTeacher.address="Nagpur";
-            System.out.println(" id " + mathsTeacher.id + " Name " + mathsTeacher.name + " address " + mathsTeacher.address);
-        }
+
+class MathsTeacher extends Teachers {
+    public static void main(String[] args) {
+        MathsTeacher mathsTeacher = new MathsTeacher();
+        mathsTeacher.id = 1;
+        mathsTeacher.name = "Sachin";
+        mathsTeacher.address = "Nagpur";
+        System.out.println(" id " + mathsTeacher.id + " Name " + mathsTeacher.name + " address " + mathsTeacher.address);
+    }
 
 }
-class chemistryTeacher extends Teachers{
+
+class chemistryTeacher extends Teachers {
     public static void main(String[] args) {
         chemistryTeacher chemistryTeacher = new chemistryTeacher();
-        chemistryTeacher.id=20;
-        chemistryTeacher.name="sagar";
-        chemistryTeacher.address="pune";
-        System.out.println(" id "+ chemistryTeacher.id +" name "+ chemistryTeacher.name + " address "+ chemistryTeacher.address);
+        chemistryTeacher.id = 20;
+        chemistryTeacher.name = "sagar";
+        chemistryTeacher.address = "pune";
+        System.out.println(" id " + chemistryTeacher.id + " name " + chemistryTeacher.name + " address " + chemistryTeacher.address);
     }
 }
