@@ -22,7 +22,6 @@ class MyThread1 extends Thread{
         this.b=b;
         this.seats=seats;
     }
-
     @Override
     public void run() {
         b.bookSeats(seats);

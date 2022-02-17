@@ -1,4 +1,6 @@
 package Multithreading;
+
+
 /*1.set Daemon thread before starting of thread otherwise you will gwt exception.
   2.We cannot set the daemon thread to main method.
 

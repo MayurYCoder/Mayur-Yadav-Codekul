@@ -1,12 +1,12 @@
 package Inheritance;
 
 public class A {
-    void showA(){
+    void show(){
         System.out.println("in a class a");
     }
 }
 class B extends A{
-    void showB(){
+    void show(){
         System.out.println("in a class B");
     }
 }
@@ -16,17 +16,17 @@ class C extends A{
     }
 
     public static void main(String[] args) {
-        A obj=new A();
-        obj.showA();
+//        A obj=new A();
+//        obj.showA();
        System.out.println("____________________");
-        B obj1= new B();
-        obj1.showA();
-        obj1.showB();
-        System.out.println("____________________");
-
-        C obj2=new C();
-        obj2.showA();
-        obj2.showC();
+        A obj1= new B();
+        obj1.show();
+//        obj1.showB();
+//        System.out.println("____________________");
+//
+//        C obj2=new C();
+//        obj2.showA();
+//        obj2.showC();
 
 
     }
